@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  /* outline: red dashed 1px; */
+  font-family: 'Inter', sans-serif;
+  list-style: none;
+
+}
+
+@media all and (max-width: 600px) {
+  * {
+    text-align: justify;
+  }
+  
+}
+
+#root {
+  color: #f5f5f7;
+  /* height: 100vh; */
+  background-color: #1d1d1f;
+}
+
+
+#home {
+  margin: 0 auto;
+  width: 80vw;
+  /* height: 90vh; */
+  margin-bottom: 8rem;
+}
+
+.navbar {
+  border-bottom: #f5f5f7 1px solid;
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.navText{
+
+  color: #1d1d1f;
+}
+
+.navText:hover {
+  color: #E21313;
+}
+
+.navbarLinks {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarLinks a {
+  color: #f5f5f7;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.navbarLinks a:hover {
+  color: #E21313;
+}
+
+.headName{
+  /* color: #E21313; */
+  font-weight: 600;
+}
+/* ------------------Responsive Navbar------------------- */
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+}
+
+/* ------------------header---------------- */
+
+.header {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+
+ 
+}
+
+.card {
+  background-color: #1d1d1f !important;
+  padding: 1rem;
+  height: 4rem; 
+  border: none !important;
+}
+
+.card p{
+  font-family: 'Inter', sans-serif;
+
+}
+
+.textWarpper {
+  margin: auto;
+}
+
+.textWarpper h1 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.textWarpper p {
+  font-family: 'Inter', sans-serif;
+  
+}
+
+.linkWarpper a {
+font-size: 13px;
+color: #f5f5f7;
+text-decoration: none;
+padding-right: 1rem;
+
+}
+
+.linkWarpper a:hover {
+  color: #E21313;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+img {
+  width: 70%;
+  height: 100%;
+  border-radius: 40%;
+  margin: 0 auto;
+}
+
+/* -------------------Responsive header---------------- */
+
+
+@media (min-width: 600px) {
+  .header { grid-template-columns: repeat(2, 1fr); 
+  }
+  
+  #projectHeader { grid-template-columns: repeat(3, 1fr); 
+    
+  }
+}
+
+/* ------------------Projects---------------- */
+
+#projects {
+  width: 100%;
+  background-color: #f5f5f7;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#porjectContainer {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+#projectCards {
+background-color: #f5f5f7!important; 
+
+}
+
+
+#projectImg {
+  transition: .5s ease;
+  backface-visibility: hidden;
+  display: block;
+  height: 20rem;
+  width: 18rem;
+
+  
+}
+
+.projectImgContainer {
+  position: relative;
+  
+}
+
+.projectImgContainer:hover #projectImg {
+  opacity: 0.3;
+  /* transform: scale(1.2); */
+
+}
+
+.projectContext {
+  color: #1d1d1f;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.projectImgContainer:hover .projectContext {
+  opacity: 1;
+}
+
+.projectContext p{
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+#porjectContainer h4 {
+  color: #1d1d1f;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  margin-bottom: 2rem;
+
+}
+
+.projectTitle{
+  color: #1d1d1f;
+  margin-top: 1rem;
+  /* text-decoration: none; */
+  display: flex;
+  justify-content: center;
+  /* list-style: none; */
+  /* text-decoration-line: none; */
+  
+  
+}
+
+.imgBox:hover  > .projectTitle {
+  color: #E21313;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+@media (min-width: 600px) {
+  
+  #projectHeader { grid-template-columns: repeat(3, 1fr); 
+    
+  }
+}
+
+/* -------------------About Page---------------- */
+
+
+#aboutPage{
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.aboutHeader{
+  margin: 0 auto;
+  width: 80vw;
+  display: grid;
+  gap: 1rem; 
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+}
+
+.skillsWrapper{
+  margin: 0 auto;
+  width: 80vw; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+ 
+}
+
+#aboutSkillText{
+  width: 3.5rem;
+  margin: 0 auto;
+ text-align: center;
+ border-bottom: 1px solid;
+
+}
+
+.aboutSkills{
+  /* background-color: #f5f5f7; */
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+#skillsCard{
+  height: 3rem;
+  width: 3rem;
+  margin: 0 auto;
+}
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+[data-title]:after {
+  content: attr(data-title);
+  /* background-color: #1d1d1f; */
+  color: #E21313;
+  font-size: 150%;
+  position: absolute;
+  padding: 1px 5px 2px 5px;
+  /* bottom: -1.6em;
+  left: 100%; */
+  top: -2em;
+  white-space: nowrap;
+  /* box-shadow: 1px 1px 3px #E21313; */
+  opacity: 0;
+  /* border: 1px solid #E21313; */
+  z-index: 99999;
+  visibility: hidden;
+}
+[data-title] {
+  /* position: relative; */
+  cursor: pointer;
+  font-size: 8px;
+}
+
+#skillsImg{
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+
+@media (min-width: 600px) {
+  .aboutHeader { grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+#aboutCard{
+  justify-content: center;
+  
+}
+
+/* -------------------Footer---------------- */
+
+#footer {
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
+  padding-top: 2rem;
+  padding-bottom: 8px;
+  margin: auto;
+  /* border-top: 1px solid #f5f5f7;
+  width: 80vw; */
+
+}
+
+.wrapper{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#footer p {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 11px;
+  margin: 0;
+  margin-top: 2rem;
+  color: #E21313;
+}
+
+.footerName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerName h6{
+  margin: 0;
+  margin-top: 0;
+  color: #f5f5f7;
+  font-weight: 500;
+}
+
+.lineDivider{
+  width: 1px;
+  height: 45px;
+  background-color: #f5f5f7;
+}
+
+.socialbtn{
+  all: unset;
+  cursor: pointer;
+
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.socialWrapper{
+  /* margin: 0 auto; */
+  width: 10rem;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+  justify-content: center;
+}
+
+#LineDivider{
+  width: 80vw;
+  height: 1px;
+  background-color: #f5f5f7;
+  margin: 1rem auto;
+}

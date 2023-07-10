@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=VT323&display=swap');
+
+  /* ---------------------Anime Project Homepage---------------------------- */
+
+
+  #animeHomepage {
+    margin: 0 auto;
+    width: 80vw;
+    /* height: 150vh; */
+    margin-bottom: 2rem
+
+  }
+
+  .animeHeader {
+    max-width: 100%;
+    /* height: 50vh; */
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    /* padding-top: 5rem; */
+   
+  }
+
+  @media (min-width: 600px) {
+
+    .animeHeader { grid-template-columns: repeat(2, 1fr); 
+
+    }
+    
+  }
+
+  #animeCard{
+    padding: 0;
+  }
+
+  #animeRole{
+    margin: auto;
+  }
+
+
+
+  /* ---------------------Anime Entery---------------------------- */
+
+.animeBody {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    background: 
+      repeating-linear-gradient(  /* making repeating lines from the right*/
+        to right,
+        transparent,
+        transparent 50px, /* each square are 50px wide   */
+        rgb(0, 0, 0) 50px,  /* the first line in that sequence creates black horizontal */
+        rgb(0, 0, 0) 55px  /* second creates a black vertical stripes. */
+
+      ),
+      repeating-linear-gradient( /* making repeating lines from the bottom*/
+        to bottom,
+        transparent,
+        transparent 50px,
+        rgb(0, 0, 0) 50px,
+        rgb(0, 0, 0) 55px
+      ),
+      linear-gradient(45deg,  #f5f5f7,  #f5f5f7);
+  }
+
+
+  .boxinside {
+    margin: 0%;
+    width: 10rem;
+    height: 20rem;
+    background-color: rgb(0, 0, 0);
+   
+ 
+  }
+  /* link for the door */
+  .boxinside a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .door {
+    margin: 0%;
+    width: 10rem;
+    height: 20rem;
+    background-color:  #f5f5f7;
+    border: 3px solid black;
+    position:absolute; /* to keep the in place*/
+    transition: 1s;
+    transform-origin: left; /* to keep keep one side of door from moving*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .door:hover{
+   transform: rotateY(45deg);  /* used this to property to animate the door opening and closing when hovered*/
+  }
+
+  .doorknob {
+    width: .75rem; /* used rem to keep shape when resizing screen */ 
+    height: .75rem;
+    border-radius: 10px;
+    background-color: black;
+    margin: 10px;
+   
+
+  }
+
+  
+ .fixed-bottom {  
+    width: 100%;
+    height: 23vh;
+    background-color: rgb(0, 0, 0);
+    border-top: 5px solid black;
+  }
+
+  /* ---------------------Loading---------------------------- */
+
+  .loadingRoot, .loadingRoot::before, .loadingRoot::after {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+                                                
+}
+
+.loadingBody {
+    background-color: black;
+    height: 100vh;
+
+}
+
+
+.bubbles {
+    display: flex;
+    /* transition: opacity 5s, visibility 5s; */
+    /* transition: opacity 20s, visibility 15s;  the lenght of the loaders visibility */
+}
+
+.bubbles span {
+    position: relative; 
+    width: .75rem;
+    height: 3rem;
+    background-color: rgb(255, 255, 255);
+    margin: 0 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(252, 251, 187),
+    0 0 50px rgb(252, 251, 187), /* layering shadows */ 
+    0 0 100px rgb(252, 251, 187);
+    animation: animate 8s linear infinite;
+    animation-duration: calc(5s / var(--i)); /* using the variable from the html, divide by the number of sec here will result in the 
+    speed of the animation and since i used different times for of the span class thats how i get the move them at different times*/
+    
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0); /* scaling it from the Y-axis, going for beamed up look (fun fact *beamed up is slang for "To get high on drugs" lol)*/
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+  /* ---------------------PopUp Box---------------------------- */
+
+
+.contentwrapper {
+    background-color:  #f5f5f7;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    color: rgb(0, 0, 0);
+}
+
+.contentwrapper h1, p {
+    font-family: 'Inter', sans-serif;
+font-family: 'VT323', monospace;
+}
+
+.btnContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btnContainer a {
+    width: 4rem;
+    background-color: rgb(0, 0, 0);
+    color:  #f5f5f7;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer; 
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 2px;
+}
+
+.btnContainer a:hover {
+    color:  #f5f5f7;
+    background-color: brown;
+    box-shadow: 0 0 0 10px brown,
+    0 0 50px brown,
+    0 0 100px brown;
+
+}
+
+.tinyText {
+
+    font-size: .30rem;
+}
+
+.contentwrapper p{
+    text-align: center;
+}
+
+  /* ---------------------Arrived---------------------------- */
+
+
+  .arrivedRoot{
+    margin: 0%;
+    padding: 0%;
+    color: black;
+    box-sizing: border-box;
+     height: 100vh;
+    text-align: center;
+    background-color: black;
+}
+.arrivedbody {
+ 
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.navbar.bg-body-tertiary {
+    background-color:  #f5f5f7;
+    width: auto;
+    margin-bottom: 5%;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.navbar-brand{
+    /* font-size: 2rem; */
+    font-family: 'VT323', monospace;
+}
+
+.card-title {
+    font-size: 2rem;
+  
+}
+
+.card {
+    margin-left: 5%; 
+    margin-right: 5%; 
+    background-color:  #f5f5f7;
+    padding: inherit;
+
+   
+
+    
+}
+
+.card-body {
+    background-color:  #f5f5f7;
+     border-radius: 10px;
+
+}
+
+.card-title, .card-text {
+    font-family: 'VT323', monospace;
+}
