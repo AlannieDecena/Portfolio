@@ -7,6 +7,7 @@ import { NavLink, Link } from "react-router-dom";
 import Animehome from "../images/Animehome.png";
 import Calculator from "../images/Calculator.png";
 
+
 export default function Projects() {
 
   
