@@ -1,18 +1,18 @@
 import React from "react";
 import NavBar from "./NavBar";
-// import AnimeHome from "../images/AnimeHome.png";
+
 import { Link } from "react-router-dom";
 import LineDivider from "../components/LineDivider";
 import useSlider from "../hooks/UseSlider";
 
-import AnimeHome from "../images/AnimeHome.png";
+import Animehome from "../images/Animehome.png";
 import Loading from "../images/Loading.png";
 import AnimeLand from "../images/AnimeLand.png";
 import Footer from "./Footer";
 export default function AnimeProject() {
   const slider = useSlider();
   React.useEffect(() => {
-    slider.setImages([AnimeHome, Loading, AnimeLand]);
+    slider.setImages([Animehome, Loading, AnimeLand]);
   }, []);
   return (
     <>
