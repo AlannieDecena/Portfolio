@@ -7,6 +7,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   // Add the react plugin to the array of plugins
   plugins: [react()],
+
+  build: {
+    outDir: 'build',
+  },
 })
 //This is a code that helps your program run smoothly. It uses special tools called "vite" and "react" to make your program work better. 
 //The code also uses something called "defineConfig" to make sure everything is set up correctly. 
