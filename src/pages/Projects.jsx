@@ -2,7 +2,7 @@ import React from "react";
 // import headerImg from "../images/headerImg.png";
 import WebImg from "../images/webImg.png";
 import LogIn from "../images/logIn.png";
-import capLogo from "../images/capLogo.png";
+// import capLogo from "../images/capLogo.png";
 import { NavLink, Link } from "react-router-dom";
 import Animehome from "../images/Animehome.png";
 import Calculator from "../images/Calculator.png";

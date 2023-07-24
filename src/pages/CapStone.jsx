@@ -1,5 +1,5 @@
 import React from "react";
-import headerImg from "../images/headerImg.png";
+import NavBar from "./NavBar";
 
 import LogIn from "../images/LogIn.png";
 import Rating from "../images/Rating.png";
@@ -41,7 +41,7 @@ export default function CapStone() {
                 feeling down and sad, I wanted "feeling lavender" to repersent
                 calmness, relaxation and having a peaceful mind.
               </p>
-              <a href="http://localhost:5174/" target="_blank">
+              <a href="https://feelinglavender.onrender.com/" target="_blank">
                 Go to live site
               </a>
             </div>

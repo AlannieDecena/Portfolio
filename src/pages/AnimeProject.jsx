@@ -35,9 +35,9 @@ export default function AnimeProject() {
                 intentionally lacks user-friendliness. However, the user flow is
                 designed to be straightforward once users start navigating.
               </p>
-              <Link to="/animehome" target="_blank">
+              <a href="https://alanniedecena.github.io/Into-Another-World-miniProject/" target="_blank">
                 Go to live site
-              </Link>
+              </a>
             </div>
           </div>
 

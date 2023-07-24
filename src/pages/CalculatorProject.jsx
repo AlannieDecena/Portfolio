@@ -31,9 +31,9 @@ export default function CalculatorProject() {
               <ul>
                 <p>Visual design, FrontEnd developer</p>
               </ul>
-              <Link to="/calculator" target="_blank">
+              <a href="https://alanniedecena.github.io/Retro-Calculator/" target="_blank">
                 Go to live site
-              </Link>
+              </a>
               
             </div>
           </div>
