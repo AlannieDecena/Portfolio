@@ -1,8 +1,23 @@
 import React from "react";
 import NavBar from "./NavBar";
-import { Link } from "react-router-dom";
 import LineDivider from "../components/LineDivider";
 import Footer from "./Footer";
+
+import LogIn from "../images/LogIn.png";
+import Rating from "../images/Rating.png";
+import Dash from "../images/Dash.png";
+import dashMood from "../images/dashMood.png";
+import Goal from "../images/Goal.png";
+import Jur from "../images/Jur.png";
+import js from "../images/js.png";
+import Iconcss from "../images/Iconcss.png";
+import Iconhtml5 from "../images/Iconhtml5.png";
+import Icondatabase from "../images/Icondatabase.png";
+import Iconfigma from "../images/Iconfigma.png";
+import Iconmysql from "../images/Iconmysql.png";
+import Iconreact from "../images/Iconreact.png";
+import IconrestApi from "../images/IconrestApi.png";
+
 
 export default function CalculatorProject() {
   return (
@@ -34,15 +49,35 @@ export default function CalculatorProject() {
               <a href="https://alanniedecena.github.io/Retro-Calculator/" target="_blank">
                 Go to live site
               </a>
-              
+<br />
+                 <h5>Resources:</h5>
+              <div className="calSkillsBox" >
+             
+              <div className="card" id="skillsCard" data-title="JavaScript">
+                <img src={js} id="skillsImg" alt="js" />
+              </div>
+              <div className="card" id="skillsCard" data-title="CSS">
+                <img src={Iconcss} id="skillsImg" alt="css" />
+              </div>
+              <div className="card" id="skillsCard" data-title="HTML5">
+                <img src={Iconhtml5} id="skillsImg" alt="html5" />
+              </div>
+              <div className="card" id="skillsCard" data-title="Database Design">
+                <img src={Icondatabase} id="skillsImg" alt="Database Design" />
+              </div>
+              </div>
+         
             </div>
           </div>
+
+          
 
           <div className="card " id="calCard">
             <div id="calImg">
             </div>
           </div>
         </section>
+       
       </div>
       <LineDivider/>
 <Footer/>

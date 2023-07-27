@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import Projects from "./Projects";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+import LineDivider from "../components/LineDivider";
 
 
 export default function HomePage() {
@@ -29,7 +30,8 @@ export default function HomePage() {
         </div>
       </section>
     </div>
-    <Projects/>
+    {/* <Projects/> */}
+    <LineDivider/>
     <Footer/>
     </>
     

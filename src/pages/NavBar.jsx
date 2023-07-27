@@ -19,7 +19,7 @@ export default function NavBar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/">
+              <NavLink to="/projects">
                 Projects
               </NavLink>
             </li>

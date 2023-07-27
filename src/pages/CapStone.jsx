@@ -7,6 +7,14 @@ import Dash from "../images/Dash.png";
 import dashMood from "../images/dashMood.png";
 import Goal from "../images/Goal.png";
 import Jur from "../images/Jur.png";
+import js from "../images/js.png";
+import Iconcss from "../images/Iconcss.png";
+import Iconhtml5 from "../images/Iconhtml5.png";
+import Icondatabase from "../images/Icondatabase.png";
+import Iconfigma from "../images/Iconfigma.png";
+import Iconmysql from "../images/Iconmysql.png";
+import Iconreact from "../images/Iconreact.png";
+import IconrestApi from "../images/IconrestApi.png";
 
 import useSlider from "../hooks/UseSlider";
 import Footer from "./Footer";
@@ -20,7 +28,7 @@ export default function CapStone() {
   return (
     <>
       <NavBar/>
-      <div id="home">
+      <div id="capHome" >
         <section className="header">
           <div className="card">
             <div className="textWarpper">
@@ -39,11 +47,12 @@ export default function CapStone() {
                 tones and rounded shapes to give it a soft and calming feel.
                 Like the experssion "feeling blue", to describe how one is
                 feeling down and sad, I wanted "feeling lavender" to repersent
-                calmness, relaxation and having a peaceful mind.
+                calmness, relaxation and having a peaceful mind.<p className="inDev">* Currently in development</p>
               </p>
               <a href="https://feelinglavender.onrender.com/" target="_blank">
                 Go to live site
               </a>
+              
             </div>
           </div>
           <div className="card">
@@ -54,7 +63,45 @@ export default function CapStone() {
               </ul>
             </div>
           </div>
+          
         </section>
+        
+        <section className="capResources" >
+        <div >
+              <h5>Resources:</h5>
+              
+            </div>
+            <div className="skillsWrapper">
+              <div className="card" id="skillsCard" data-title="JavaScript">
+                <img src={js} id="skillsImg" alt="js" />
+              </div>
+              <div className="card" id="skillsCard" data-title="CSS">
+                <img src={Iconcss} id="skillsImg" alt="css" />
+              </div>
+              <div className="card" id="skillsCard" data-title="HTML5">
+                <img src={Iconhtml5} id="skillsImg" alt="html5" />
+              </div>
+              <div className="card" id="skillsCard" data-title="Database Design">
+                <img src={Icondatabase} id="skillsImg" alt="Database Design" />
+              </div>
+             
+              <div className="card" id="skillsCard" data-title="Figma">
+                <img src={Iconfigma} id="skillsImg" alt="Figma" />
+              </div>
+              
+              <div className="card" id="skillsCard" data-title="MySQL">
+                <img src={Iconmysql} id="skillsImg" alt="MySQL" />
+              </div>
+
+              <div className="card" id="skillsCard" data-title="React">
+                <img src={Iconreact} id="skillsImg" alt="React" />
+              </div>
+              <div className="card" id="skillsCard" data-title="Rest API">
+                <img src={IconrestApi} id="skillsImg" alt="Rest API" />
+              </div>
+            </div>
+          </section>
+
       </div>
       <section className="whiteBg">
         <div className="capCard">

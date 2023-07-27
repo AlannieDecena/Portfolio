@@ -1,18 +1,20 @@
 import React from "react";
-// import headerImg from "../images/headerImg.png";
-// import WebImg from "../images/webImg.png";
 import LogIn from "../images/LogIn.png";
-// import capLogo from "../images/capLogo.png";
 import { NavLink, Link } from "react-router-dom";
 import Animehome from "../images/Animehome.png";
 import Calculator from "../images/Calculator.png";
+import Footer from "./Footer";
 
+import NavBar from "./NavBar";
 
 export default function Projects() {
 
   
   return (
+    <>
+    
     <div id="projects">
+      <NavBar/>
       <div id="porjectContainer">
         <h4>Projects</h4>
 
@@ -66,5 +68,7 @@ export default function Projects() {
         </section>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

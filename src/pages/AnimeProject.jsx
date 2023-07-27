@@ -1,7 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
 
-import { Link } from "react-router-dom";
 import LineDivider from "../components/LineDivider";
 import useSlider from "../hooks/UseSlider";
 
@@ -9,6 +8,15 @@ import Animehome from "../images/Animehome.png";
 import Loading from "../images/Loading.png";
 import AnimeLand from "../images/AnimeLand.png";
 import Footer from "./Footer";
+
+
+import js from "../images/js.png";
+import Iconcss from "../images/Iconcss.png";
+import Iconhtml5 from "../images/Iconhtml5.png";
+import Iconfigma from "../images/Iconfigma.png";
+
+import IconrestApi from "../images/IconrestApi.png";
+
 export default function AnimeProject() {
   const slider = useSlider();
   React.useEffect(() => {
@@ -50,6 +58,34 @@ export default function AnimeProject() {
             </div>
           </div>
         </section>
+
+        <section className="capResources" >
+        <div >
+              <h5>Resources:</h5>
+              
+            </div>
+            <div className="skillsWrapper">
+              <div className="card" id="skillsCard" data-title="JavaScript">
+                <img src={js} id="skillsImg" alt="js" />
+              </div>
+              <div className="card" id="skillsCard" data-title="CSS">
+                <img src={Iconcss} id="skillsImg" alt="css" />
+              </div>
+              <div className="card" id="skillsCard" data-title="HTML5">
+                <img src={Iconhtml5} id="skillsImg" alt="html5" />
+              </div>
+
+             
+              <div className="card" id="skillsCard" data-title="Figma">
+                <img src={Iconfigma} id="skillsImg" alt="Figma" />
+              </div>
+
+              <div className="card" id="skillsCard" data-title="Rest API">
+                <img src={IconrestApi} id="skillsImg" alt="Rest API" />
+              </div>
+            </div>
+          </section>
+
 
       </div>
         <div className="slider">
