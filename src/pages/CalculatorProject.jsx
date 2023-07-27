@@ -49,6 +49,7 @@ export default function CalculatorProject() {
             
 <br />
                  <h5>Resources:</h5>
+                 <br />
               <div className="calSkillsBox" >
              
               <div className="card" id="skillsCard" data-title="JavaScript">
@@ -60,9 +61,7 @@ export default function CalculatorProject() {
               <div className="card" id="skillsCard" data-title="HTML5">
                 <img src={Iconhtml5} id="skillsImg" alt="html5" />
               </div>
-              <div className="card" id="skillsCard" data-title="Database Design">
-                <img src={Icondatabase} id="skillsImg" alt="Database Design" />
-              </div>
+
               </div>
          
             </div>
