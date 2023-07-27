@@ -46,9 +46,7 @@ export default function CalculatorProject() {
               <ul>
                 <p>Visual design, FrontEnd developer</p>
               </ul>
-              <a href="https://alanniedecena.github.io/Retro-Calculator/" target="_blank">
-                Go to live site
-              </a>
+            
 <br />
                  <h5>Resources:</h5>
               <div className="calSkillsBox" >
@@ -68,9 +66,12 @@ export default function CalculatorProject() {
               </div>
          
             </div>
+            <div className="textWarpper">
+          <a href="https://alanniedecena.github.io/Retro-Calculator/" target="_blank">
+                Go to live site
+              </a>
+</div>
           </div>
-
-          
 
           <div className="card " id="calCard">
             <div id="calImg">
