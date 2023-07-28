@@ -1,10 +1,10 @@
 import React from "react";
 import LogIn from "../images/LogIn.png";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Animehome from "../images/Animehome.png";
 import Calculator from "../images/Calculator.png";
 import Footer from "./Footer";
-
+import LineDivider from "./LineDivider";
 import NavBar from "./NavBar";
 
 export default function Projects() {
@@ -68,6 +68,7 @@ export default function Projects() {
         </section>
       </div>
     </div>
+<LineDivider/>
     <Footer/>
     </>
   );
