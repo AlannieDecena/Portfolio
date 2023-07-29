@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Animehome from "../images/Animehome.png";
 import Calculator from "../images/Calculator.png";
 import Footer from "./Footer";
-import LineDivider from "./LineDivider";
+import LineDivider from "../components/LineDivider";
 import NavBar from "./NavBar";
 
 export default function Projects() {
