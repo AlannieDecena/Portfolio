@@ -16,33 +16,39 @@ import IconrestApi from "../images/IconrestApi.png";
 import Footer from "./Footer";
 import LineDivider from "../components/LineDivider";
 
+import ProfilePic from "../images/ProfilePic.png";
+
 export default function About() {
   return (
     <>
-<NavBar/>
+      <NavBar />
       <div>
         <div id="aboutPage">
           <section className="aboutHeader">
             <div className="card" id="aboutCard">
-              <h2>Alannie Decena</h2>
+              <h2>Hello!</h2>
               <p>
-                I design and develop websites and I am base in Auckland, New
-                Zealand. I like to discribe myself as a "creative person", from
-                hands on arts and crafts to digital design and web development.
-                One of the things learnt while studying at university and stand
-                by is "design with a purpose", which is the reason why I'm
-                always motivated and inspired by art, product and brands that
-                have a purpose or cause they suport and believe in. For me I am
-                a supporter of mental health and well being, which was a topic I
-                tackled for my capstone project.
+                I am a website designer and developer based in Auckland, New
+                Zealand. I have a passion for creativity, spanning from
+                traditional arts and crafts to modern digital design and web
+                development. Throughout my academic journey at university, one
+                principle I firmly stand by is "design with a purpose." This
+                philosophy drives me to seek inspiration from art, products, and
+                brands that are dedicated to supporting meaningful causes.
+                </p>
+                <p>Personally, I am a strong advocate for mental health and
+                well-being, and this topic became the focus of my capstone
+                project. I believe in using my skills and expertise to
+                contribute positively to society and make a difference in areas
+                that matter the most.
               </p>
             </div>
             <div className="card">
-              <img src={headerImg} alt="headerImg" />
+              <img src={ProfilePic} className="ProfilePic" alt="headerImg" />
             </div>
           </section>
-          
-              <h5 id="aboutSkillText">Skills:</h5>
+
+          <h5 id="aboutSkillText">Skills:</h5>
 
           <section className="aboutSkills">
             <div className="skillsWrapper">
@@ -55,7 +61,11 @@ export default function About() {
               <div className="card" id="skillsCard" data-title="HTML5">
                 <img src={Iconhtml5} id="skillsImg" alt="html5" />
               </div>
-              <div className="card" id="skillsCard" data-title="Database Design">
+              <div
+                className="card"
+                id="skillsCard"
+                data-title="Database Design"
+              >
                 <img src={Icondatabase} id="skillsImg" alt="Database Design" />
               </div>
               <div className="card" id="skillsCard" data-title="Docker">
@@ -81,11 +91,10 @@ export default function About() {
               </div>
             </div>
           </section>
-
         </div>
       </div>
-      <LineDivider/>
-      <Footer/>
+      <LineDivider />
+      <Footer />
     </>
   );
 }

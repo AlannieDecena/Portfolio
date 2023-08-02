@@ -1,10 +1,11 @@
 import React from "react";
-import headerImg from "../images/headerImg.png";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import LineDivider from "../components/LineDivider";
+
+import ProfilePic from "../images/ProfilePic.png";
 
 
 export default function HomePage() {
@@ -26,7 +27,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="card">
-          <img src={headerImg} alt="headerImg" />
+          <img src={ProfilePic} className="ProfilePic" alt="headerImg" />
         </div>
       </section>
     </div>
