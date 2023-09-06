@@ -29,7 +29,7 @@ export default function AnimeProject() {
         <section className="animeHeader">
           <div className="card" id="animeCard">
             <div className="textWarpper">
-              <h2>In a Another World</h2>
+              <h2>In Another World</h2>
               <p>
                 I wanted to put my knowledge of JavaScript and API fetches into
                 practice, so I decided to create this mini personal project
@@ -53,7 +53,7 @@ export default function AnimeProject() {
             <div id="animeRole" className="textWarpper">
               <h5>My Role:</h5>
               <ul>
-                <p>Visual design, FrontEnd developer</p>
+                <p>Visual design, Front-End developer</p>
               </ul>
             </div>
           </div>

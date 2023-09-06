@@ -47,7 +47,7 @@ export default function CapStone() {
                 tones and rounded shapes to give it a soft and calming feel.
                 Like the experssion "feeling blue", to describe how one is
                 feeling down and sad, I wanted "feeling lavender" to repersent
-                calmness, relaxation and having a peaceful mind.<p className="inDev">* Currently in development</p>
+                 calmness, relaxation and having a peaceful mind.{/*<p className="inDev">* Currently in development</p> */}
               </p>
               <a href="https://feelinglavender.onrender.com/" target="_blank">
                 Go to live site
