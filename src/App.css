@@ -7,12 +7,12 @@
   color: #f5f5f7;
 }
 
-@media all and (max-width: 600px) {
+/* @media all and (max-width: 600px) {
   * {
-    text-align: justify;
+    text-align: center;
   }
   
-}
+} */
 
 #root {
 
