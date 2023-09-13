@@ -6,6 +6,7 @@ import Calculator from "../images/Calculator.png";
 import Footer from "./Footer";
 import LineDivider from "../components/LineDivider";
 import NavBar from "./NavBar";
+import Cardgame2 from "../images/Cardgame2.png";
 
 export default function Projects() {
 
@@ -64,7 +65,21 @@ export default function Projects() {
             </div>
           </div>
 
-     
+     {/* -------------------------------Project 4------------------------------------------------ */}
+
+<div id="projectCards" className="card">
+            <div className="imgBox">
+              <div className="projectImgContainer">
+                <img id="projectImg" src={Cardgame2} alt="headerImg" />
+                <div className="projectContext">
+                  <p>A re-deign of a online card game</p>
+                </div>
+              </div>
+              <li className="projectTitle" >
+                <Link className="navText" to="/redesign">Ux/Ui Re-design</Link>
+                </li>
+            </div>
+          </div>
         </section>
       </div>
     </div>

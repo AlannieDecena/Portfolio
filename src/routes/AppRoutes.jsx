@@ -8,7 +8,7 @@ import AnimeProject from "../pages/AnimeProject";
 import CalculatorProject from "../pages/CalculatorProject";
 
 import About from "../pages/About";
-
+import UxUiRedesign from "../pages/UxUiRedesign";
 
 
 function AppRoutes() {
@@ -24,6 +24,7 @@ function AppRoutes() {
      <Route path="/about" element={<About />} />
      <Route path="/projects" element={<Projects />} />
 
+     <Route path="/redesign" element={<UxUiRedesign />} />
      
 
 
